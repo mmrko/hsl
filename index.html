@@ -3,8 +3,45 @@
 <head></head>
 
 <body>
-  <iframe src="https://omatnaytot.hsl.fi/static?url=1e408687-500d-5400-b454-410bd3ed307b"
-    style="width: 100%; height: 100%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 999999; position: fixed; top: 0; left: 0; right: 0; bottom: 0;"></iframe>
+  <script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id="038770"
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="dark"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://www.tomorrow.io/weather-api/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by the Tomorrow.io Weather API"
+              src=""
+              width="250"
+              height="18"
+            />
+          </a>
+        </div>
 </body>
 
 </html>
